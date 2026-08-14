@@ -10,5 +10,5 @@ export default defineConfig({
   build: {
     target: 'esnext',
   },
-  base: '/ink-to-math/'
+  base: '/Ink-To-Math/'
 });
