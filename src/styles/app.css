@@ -20,7 +20,7 @@
   align-items: stretch;
   grid-template-columns: minmax(0, 1fr) var(--equation-panel-width, 480px);
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .panel {
@@ -33,7 +33,7 @@
   flex-direction: column;
   min-height: 0;
   min-width: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .draw-panel {
@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-width: 0;
 }
 
 .title {
@@ -69,6 +70,7 @@
 .canvas-wrap {
   flex: 1;
   min-height: 0;
+  min-width: 0;
   border-radius: 14px;
   border: 1px solid #3f3f46;
   background: #0b0b0d;
@@ -85,6 +87,7 @@ canvas {
 .actions {
   display: flex;
   gap: 10px;
+  min-width: 0;
 }
 
 button {
@@ -148,6 +151,7 @@ button.small {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 0;
 }
 
 .desc {
@@ -161,6 +165,7 @@ button.small {
   flex-direction: column;
   gap: 10px;
   min-width: 0;
+  width: 100%;
 }
 
 .section-label,
@@ -178,6 +183,7 @@ button.small {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-width: 0;
 }
 
 .preview-canvas-wrap {
@@ -223,6 +229,8 @@ button.small {
   background: #111113;
   overflow-x: auto;
   overflow-y: hidden;
+  width: 100%;
+  min-width: 0;
   max-width: 100%;
 }
 
@@ -237,6 +245,7 @@ button.small {
 .code-block {
   margin: 0;
   width: 100%;
+  min-width: 0;
   max-width: 100%;
   padding: 10px 12px;
   border: 1px solid #27272a;
